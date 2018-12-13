@@ -17,7 +17,7 @@ import org.neo4j.procedure.UserFunction;
 import org.neo4j.procedure.Name;
 
 public class CosineSimilarity {
-    @UserFunction()
+    @UserFunction
     @Description("Returns the cosine similarity of two strings.")
     public double cosineSimilarity(@Name("text1") String text1, @Name("text2") String text2) {
         if (text1 == null || text2 == null) {
